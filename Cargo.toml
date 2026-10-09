@@ -1,0 +1,19 @@
+[package]
+name = "taktus"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.88"
+authors = ["Shakib Bin Kabir"]
+description = "The tempo of music and where its beats fall, from the sound itself, for almost nothing. No dependency."
+license = "Apache-2.0"
+repository = "https://github.com/shakibbinkabir/taktus"
+documentation = "https://docs.rs/taktus"
+readme = "README.md"
+keywords = ["bpm", "tempo", "beat", "audio", "music"]
+categories = ["multimedia::audio", "algorithms"]
+include = ["/src", "/examples", "/README.md", "/CHANGELOG.md", "/LICENSE", "/NOTICE"]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

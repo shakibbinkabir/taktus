@@ -1,0 +1,11 @@
+/target
+/js/target
+# Made by js/build.mjs for the published package.
+/js/wasm.js
+/js/LICENSE
+/js/NOTICE
+# The benchmark sets and what each library made of them.
+/compare/sets
+/compare/results
+__pycache__/
+*.class
