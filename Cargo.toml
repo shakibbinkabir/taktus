@@ -7,6 +7,7 @@ authors = ["Shakib Bin Kabir"]
 description = "The tempo of music and where its beats fall, from the sound itself, for almost nothing. No dependency."
 license = "Apache-2.0"
 repository = "https://github.com/shakibbinkabir/taktus"
+homepage = "https://taktus.thisissbk.com"
 documentation = "https://docs.rs/taktus"
 readme = "README.md"
 keywords = ["bpm", "tempo", "beat", "audio", "music"]

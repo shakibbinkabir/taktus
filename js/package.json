@@ -10,7 +10,7 @@
     "url": "git+https://github.com/shakibbinkabir/taktus.git",
     "directory": "js"
   },
-  "homepage": "https://github.com/shakibbinkabir/taktus#readme",
+  "homepage": "https://taktus.thisissbk.com",
   "bugs": "https://github.com/shakibbinkabir/taktus/issues",
   "type": "module",
   "main": "./index.js",

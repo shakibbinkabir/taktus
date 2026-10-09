@@ -7,6 +7,8 @@
 
 The tempo of music and where its beats fall, from the sound itself, for almost nothing.
 
+**[taktus.thisissbk.com](https://taktus.thisissbk.com)**: drop a song on the page and see its beat, in your browser.
+
 One Rust file, no dependency, no `unsafe`. Sound goes in sample by sample; a tempo and the time of every beat come out. It is built to run beside something else — a visualiser, a game, a light show — without being noticed: under a hundredth of a percent of one core, and about nine kilobytes of memory while it listens.
 
 - **For a recording**: its tempo, how far to trust it, and every beat.

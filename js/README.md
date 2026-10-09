@@ -1,6 +1,6 @@
 # taktus
 
-The tempo of music and where its beats fall, from the sound itself, for almost nothing.
+The tempo of music and where its beats fall, from the sound itself, for almost nothing. Try it on a song at [taktus.thisissbk.com](https://taktus.thisissbk.com).
 
 One WebAssembly module of 70 KB (28 KB gzipped) inside the package: no dependency, nothing to fetch or to configure, the same in a browser, a worker, an audio worklet or Node. It is the [Rust engine](https://github.com/shakibbinkabir/taktus) built for the web, and runs at about three quarters of its native speed: a second of sound takes about a third of a millisecond to hear.
 
