@@ -1,0 +1,34 @@
+{
+  "name": "taktus",
+  "version": "0.1.0",
+  "description": "The tempo of music and where its beats fall, from the sound itself, for almost nothing. One small WebAssembly module, no dependency.",
+  "keywords": ["bpm", "tempo", "beat", "beat-detection", "beat-tracking", "audio", "music", "wasm", "webassembly", "web-audio"],
+  "license": "Apache-2.0",
+  "author": "Shakib Bin Kabir",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shakibbinkabir/taktus.git",
+    "directory": "js"
+  },
+  "homepage": "https://github.com/shakibbinkabir/taktus#readme",
+  "bugs": "https://github.com/shakibbinkabir/taktus/issues",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "files": ["index.js", "index.d.ts", "wasm.js", "LICENSE", "NOTICE"],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test",
+    "prepack": "node build.mjs"
+  }
+}

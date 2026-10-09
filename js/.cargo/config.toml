@@ -1,0 +1,4 @@
+# WebAssembly SIMD (every browser since 2023, Node 16.4): the transform and the
+# echo run four numbers at a time, as they do natively.
+[target.wasm32-unknown-unknown]
+rustflags = ["-C", "target-feature=+simd128"]
