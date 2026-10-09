@@ -4,6 +4,8 @@
 /js/wasm.js
 /js/LICENSE
 /js/NOTICE
+# The engine as the site loads it: copied in from js/ when the site is deployed.
+/site/taktus
 # The benchmark sets and what each library made of them.
 /compare/sets
 /compare/results

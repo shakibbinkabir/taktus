@@ -1,0 +1,43 @@
+name: Site
+
+# taktus.thisissbk.com: the page in site/, with the engine it demonstrates
+# built from this repository, the same build that goes to npm.
+
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", "js/**", "src/**", ".github/workflows/site.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - run: node build.mjs
+        working-directory: js
+      - run: mkdir -p site/taktus && cp js/index.js js/wasm.js site/taktus/
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v5
